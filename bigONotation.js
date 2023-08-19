@@ -17,3 +17,24 @@ function anotherAddUpTo(n) {
 }
 
 console.log(anotherAddUpTo(6))
+
+//O(1) space complexity example, sums the numbers in an array
+
+function sum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+}
+
+//O(n) space complexity example, loops through an array and returns a new array where each number in the previous array is doubled
+
+function double(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(2 * arr[i])
+  }
+  return newArr;
+}
+
